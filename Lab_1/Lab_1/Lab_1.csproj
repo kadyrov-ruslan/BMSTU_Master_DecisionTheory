@@ -45,6 +45,8 @@
     <Compile Include="BinarySolution.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="KnapsackData.cs" />
+    <Compile Include="KnapsackSolver.cs" />
+    <Compile Include="KnapsackStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaSolver.cs" />

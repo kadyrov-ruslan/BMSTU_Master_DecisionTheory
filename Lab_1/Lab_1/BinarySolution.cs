@@ -27,6 +27,11 @@ namespace Lab_1
             return _chromosome[position];
         }
 
+        public int GetSize()
+        {
+            return _chromosome.Length;
+        }
+
         public void Flip(int position) 
         {
             _chromosome[position] = (byte) (_chromosome[position] ^ 1);
@@ -37,7 +42,7 @@ namespace Lab_1
             for (var i = 0; i < _chromosome.Length; i++) 
             {
                 var random = new Random();
-                var randomNumber = random.Next(0, 1);
+                var randomNumber = random.NextDouble();
                 if (randomNumber > 0.3)
                     _chromosome[i] = 0;
                 else

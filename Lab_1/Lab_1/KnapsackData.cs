@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Lab_1
 {
@@ -14,6 +10,15 @@ namespace Lab_1
         public KnapsackData(int maxWeight) {
             AvailableItems = new List<Item>();
             MaxWeight = maxWeight;
+        }
+
+        public void AddItem(Item item)
+        {
+            AvailableItems.Add(item);
+        }
+        public Item GetData(int index)
+        {
+            return AvailableItems[index];
         }
     }
 }
