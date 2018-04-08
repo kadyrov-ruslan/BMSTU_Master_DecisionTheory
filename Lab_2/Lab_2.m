@@ -1,4 +1,4 @@
-M = dlmread('hungarian.data.txt');
+ M = dlmread('hungarian.data.txt');
 [rowsNum, colsNum]= size(M);
 
 paramsCount = 14;
@@ -33,6 +33,10 @@ for j=1:(rowsNum/10)
 end
 
 [IDX,C] = kmeans(inputMatrix,5);
+
+figure
+scatter3(inputMatrix(:,1),inputMatrix(:,4),inputMatrix(:,12), 40, IDX, 'filled')
+
 % X = [IDX(1,:),IDX(2,:),IDX(3,:),IDX(4,:),IDX(5,:)];
 % varNames = {'1Param'; '2Param'; '3Param'; '4Param'; '5Param'};
 % figure
